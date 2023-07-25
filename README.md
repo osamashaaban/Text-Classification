@@ -18,9 +18,12 @@ where k:  is the number of elements in the word, and m: the maximum length of wo
 - The model for this task is a conv1D model with maxpooling and dropout to avoid the overfitting 
 - I prefered to use conv1D over the RNN model to make the task faster and the data is not too big so if i used a complex model it will overfit and will take lots of time in training
 ## ***Evaluation***
+![Model](https://github.com/osamashaaban/Text-Classification/assets/63675685/81e23033-3a2c-4177-b5c5-375babb1a33b)
 - I used the F1 score, Precision and Recall for evaluating the model F1 as it is the harmonic mean of precision and recall, and provides a single value that balances both metrics.
 - Precision gives an insight about how good does the model in the data he tested so if it gives 50% it means that the model could predict 50% of the data correctly"من كل الداتا الي حاول يتوقها كام واحده توقعها صح"
-- Recall is about how much the model could predict correctly from the actual true data. 
+- Recall is about how much the model could predict correctly from the actual true data.
+  ![Precisionrecall svg](https://github.com/osamashaaban/Text-Classification/assets/63675685/224a362e-ad15-4b47-818e-b2b2931395f7)
+
 
 ## ***Future Problems***
 - I tried trained the model on only the files of stories as i though that is the most relevent sentences to the topic not the comments on every post and actually i found that the data is balaced but small. so I guess if the comments are pure relevent to the topic of the story it may help to enhace the metrics of the model
